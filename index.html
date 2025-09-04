@@ -1,292 +1,353 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Authentic Buddhist pirikara sets in Boralasgamuwa, Colombo. Handmade offerings for temples and homes." />
-  <meta name="keywords" content="pirikara, Buddhist offerings, Boralasgamuwa shop, Colombo pirikara, temple offerings, Buddhist items, Sri Lanka" />
-  <title>Punkalasa Atapirikara - Buddhist Pirikara Shop in Boralasgamuwa</title>
-
-  <!-- Google Analytics & Meta Pixel Placeholders -->
-  <script>/* GA script will go here */</script>
-  <script>/* Meta Pixel will go here */</script>
-
-  <style>
-    :root {
-      --primary: #e6b587;
-      --secondary: #a8d8c9;
-      --accent: #d4af37;
-      --text: #2c3e50;
-      --bg: #f9f7f4;
-    }
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      color: var(--text);
-      background: url('https://i.imgur.com/5VvJTrX.png') repeat center center; /* Lotus BG */
-      background-size: 300px;
-      background-color: var(--bg);
-    }
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-    header {
-      background: white;
-      padding: 15px 0;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .logo {
-      display: flex;
-      align-items: center;
-    }
-    .logo img {
-      height: 50px;
-      margin-right: 10px;
-    }
-    .nav-links {
-      display: flex;
-      gap: 20px;
-    }
-    .nav-links a {
-      text-decoration: none;
-      color: var(--text);
-      font-weight: 500;
-    }
-    .hamburger {
-      display: none;
-      cursor: pointer;
-    }
-    .hero {
-      text-align: center;
-      padding: 100px 20px;
-      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://i.imgur.com/5VvJTrX.png');
-      background-size: cover;
-      color: white;
-    }
-    .btn {
-      background: var(--accent);
-      color: white;
-      border: none;
-      padding: 12px 24px;
-      border-radius: 30px;
-      font-weight: 600;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 20px;
-    }
-    section {
-      padding: 60px 0;
-      background: white;
-    }
-    .lang-toggle {
-      margin-left: 20px;
-    }
-    .lang-toggle button {
-      background: none;
-      border: 1px solid var(--text);
-      padding: 5px 10px;
-      margin: 0 5px;
-      cursor: pointer;
-    }
-    iframe {
-      width: 100%;
-      height: 300px;
-      border: 0;
-      border-radius: 10px;
-      margin-top: 20px;
-    }
-    .contact-form input {
-      display: block;
-      width: 100%;
-      max-width: 400px;
-      padding: 12px;
-      margin: 10px 0;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      font-size: 16px;
-    }
-    .fab {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background: #25d366;
-      color: white;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 28px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      z-index: 1000;
-      text-decoration: none;
-    }
-    footer {
-      background: var(--primary);
-      color: white;
-      text-align: center;
-      padding: 40px 0;
-    }
-    footer a {
-      color: white;
-      font-size: 24px;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-    @media (max-width: 768px) {
-      .hamburger {
-        display: block;
-      }
-      .nav-links {
-        display: none;
-        flex-direction: column;
-        background: white;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        right: 0;
-        padding: 20px;
-      }
-      .nav-links.active {
-        display: flex;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punkalasa Atapirikara - Buddhist Offerings Shop in Boralesgamuwa</title>
+    <meta name="description" content="Premium quality pirikara (Buddhist offerings) in Boralesgamuwa. Traditional Sri Lankan Buddhist religious items, flowers, oil lamps, and puja items.">
+    <meta name="keywords" content="pirikara, Buddhist offerings, Boralesgamuwa, Colombo, religious items, puja items, Sri Lanka, Buddhist temple supplies">
+    
+    <!-- Placeholder for Meta Pixel Tag -->
+    <!-- Placeholder for Google SEO Tag -->
+    
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #8e44ad;
+            --secondary-color: #f1c40f;
+            --accent-color: #27ae60;
+            --light-color: #f9f9f9;
+            --dark-color: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .lotus-bg {
+            background-image: url('http://static.photos/minimal/1200x630/42');
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+        }
+        
+        .language-switcher {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        
+        .floating-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .nav-link:hover {
+            color: var(--secondary-color);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+    </style>
 </head>
-<body>
+<body class="bg-gray-50">
+    <!-- Language Switcher -->
+    <div class="language-switcher bg-white rounded-full shadow-lg p-2">
+        <button class="px-3 py-1 rounded-full bg-purple-100 text-purple-800 font-medium">EN</button>
+        <button class="px-3 py-1 rounded-full text-gray-600 font-medium">සිං</button>
+    </div>
 
-  <header>
-    <div class="container">
-      <nav>
-        <div class="logo">
-          <img src="https://via.placeholder.com/50" alt="Logo" />
-          <h2>Punkalasa Atapirikara</h2>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <div class="h-12 w-12 bg-purple-200 rounded-full flex items-center justify-center">
+                    <i data-feather="shopping-bag" class="text-purple-700"></i>
+                </div>
+                <a href="#" class="text-2xl font-bold text-purple-800">Punkalasa Atapirikara</a>
+            </div>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link text-gray-700 hover:text-purple-600 transition-all">Home</a>
+                <a href="#products" class="nav-link text-gray-700 hover:text-purple-600 transition-all">Products</a>
+                <a href="#about" class="nav-link text-gray-700 hover:text-purple-600 transition-all">About Us</a>
+                <a href="#contact" class="nav-link text-gray-700 hover:text-purple-600 transition-all">Contact</a>
+            </div>
+            
+            <button class="md:hidden focus:outline-none" id="menu-toggle">
+                <i data-feather="menu" class="text-gray-700"></i>
+            </button>
         </div>
-        <div class="nav-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="products.html">Products</a>
-          <a href="#contact">Contact</a>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white w-full px-4 py-2 shadow-lg" id="mobile-menu">
+            <a href="#home" class="block py-2 text-gray-700 hover:text-purple-600 transition-all">Home</a>
+            <a href="#products" class="block py-2 text-gray-700 hover:text-purple-600 transition-all">Products</a>
+            <a href="#about" class="block py-2 text-gray-700 hover:text-purple-600 transition-all">About Us</a>
+            <a href="#contact" class="block py-2 text-gray-700 hover:text-purple-600 transition-all">Contact</a>
         </div>
-        <div class="lang-toggle">
-          <button onclick="setLang('en')">EN</button>
-          <button onclick="setLang('si')">සිං</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="lotus-bg bg-purple-900 text-white py-20 md:py-32 px-4">
+        <div class="container mx-auto text-center" data-aos="fade-up">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Premium Buddhist Offerings</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Traditional Sri Lankan pirikara for temples and home worship in Boralesgamuwa</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#products" class="bg-yellow-500 hover:bg-yellow-600 text-purple-900 font-bold py-3 px-8 rounded-full transition-all">View Products</a>
+                <a href="#contact" class="bg-transparent hover:bg-purple-800 border-2 border-white text-white font-bold py-3 px-8 rounded-full transition-all">Contact Us</a>
+            </div>
         </div>
-        <div class="hamburger">
-          <span>☰</span>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-purple-900" data-aos="fade-up">Our Pirikara Collection</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="products-container">
+                <!-- Products will be loaded from JSON -->
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="products.html" class="inline-block bg-purple-700 hover:bg-purple-800 text-white font-bold py-3 px-8 rounded-full transition-all">
+                    View All Products
+                </a>
+            </div>
         </div>
-      </nav>
-    </div>
-  </header>
+    </section>
 
-  <section id="home" class="hero">
-    <div class="container">
-      <h1 id="title">Punkalasa Atapirikara</h1>
-      <p id="subtitle">Sacred Buddhist Offerings in Boralasgamuwa, Colombo</p>
-      <a href="#contact" class="btn">Order Now</a>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2" data-aos="fade-right">
+                    <img src="http://static.photos/people/640x360/10" alt="Punkalasa Atapirikara Shop" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <h2 class="text-3xl font-bold mb-6 text-purple-900">About Punkalasa Atapirikara</h2>
+                    <p class="text-gray-700 mb-4">Established in 2010, Punkalasa Atapirikara has been serving the Buddhist community in Boralesgamuwa with high-quality religious offerings and temple supplies.</p>
+                    <p class="text-gray-700 mb-4">We specialize in traditional Sri Lankan pirikara including flowers, oil lamps, incense, and complete puja sets for temple offerings and home worship.</p>
+                    <p class="text-gray-700 mb-6">Our mission is to provide authentic, ethically-sourced Buddhist religious items while preserving traditional craftsmanship.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center bg-white p-4 rounded-lg shadow">
+                            <i data-feather="check-circle" class="text-green-500 mr-2"></i>
+                            <span>100% Authentic</span>
+                        </div>
+                        <div class="flex items-center bg-white p-4 rounded-lg shadow">
+                            <i data-feather="truck" class="text-blue-500 mr-2"></i>
+                            <span>Free Local Delivery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="about">
-    <div class="container">
-      <h2 id="about-title">About Us</h2>
-      <p id="about-text">Punkalasa Atapirikara has been serving the Buddhist community in Boralasgamuwa for over 15 years. We specialize in handmade pirikara sets using traditional materials and craftsmanship.</p>
-    </div>
-  </section>
+    <!-- Location Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-purple-900" data-aos="fade-up">Our Location</h2>
+            
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2 bg-gray-100 p-4 rounded-lg" data-aos="fade-right">
+                    <h3 class="text-xl font-semibold mb-4 text-purple-800">Visit Our Shop</h3>
+                    <p class="text-gray-700 mb-4"><i data-feather="map-pin" class="inline mr-2"></i> 123 Temple Road, Boralesgamuwa, Colombo</p>
+                    <p class="text-gray-700 mb-4"><i data-feather="clock" class="inline mr-2"></i> Open Daily: 8:00 AM - 8:00 PM</p>
+                    <p class="text-gray-700"><i data-feather="phone" class="inline mr-2"></i> +94 76 123 4567</p>
+                </div>
+                <div class="md:w-1/2 h-96" data-aos="fade-left">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.798511757687!2d79.9194143153267!3d6.919693495003876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2575e8a7f5f3b%3A0x2d0a6a7b1a0a0a0a!2sBoralesgamuwa!5e0!3m2!1sen!2slk!4v1620000000000!5m2!1sen!2slk" 
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" class="rounded-lg shadow-lg"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="services" style="background:var(--secondary);color:white;">
-    <div class="container">
-      <h2 id="services-title">Our Services</h2>
-      <ul>
-        <li id="service1">Custom Pirikara Sets</li>
-        <li id="service2">Temple Supply Contracts</li>
-        <li id="service3">Home Delivery in Colombo</li>
-      </ul>
-    </div>
-  </section>
+    <!-- Contact Form -->
+    <section id="contact" class="py-16 bg-purple-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-purple-900" data-aos="fade-up">Contact Us</h2>
+            
+            <div class="max-w-2xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden" data-aos="zoom-in">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-purple-700 text-white p-8">
+                        <h3 class="text-xl font-semibold mb-4">Get in Touch</h3>
+                        <p class="mb-6">Have questions about our pirikara products? Send us a message and we'll respond promptly.</p>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i data-feather="mail" class="mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="font-medium">Email</h4>
+                                    <p class="text-purple-200">info@punkalasa.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="phone" class="mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="font-medium">Phone</h4>
+                                    <p class="text-purple-200">+94 76 123 4567</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-feather="map-pin" class="mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="font-medium">Address</h4>
+                                    <p class="text-purple-200">123 Temple Road, Boralesgamuwa, Colombo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <form id="contactForm" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-1">Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" required>
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-gray-700 mb-1">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" required>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-700 mb-1">Message</label>
+                                <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-purple-700 hover:bg-purple-800 text-white font-bold py-3 px-4 rounded-lg transition-all">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section>
-    <div class="container">
-      <h2 id="map-title">Visit Us</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.863238800679!2d79.8935896748474!3d6.894573593215554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bcf5f5a3d3d%3A0x3b3b3b3b3b3b3b3b!2sBoralasgamuwa!5e0!3m2!1sen!2slk!4v1700000000000!5m2!1sen!2slk" allowfullscreen></iframe>
-    </div>
-  </section>
+    <!-- Footer -->
+    <footer class="bg-purple-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Punkalasa Atapirikara</h3>
+                    <p class="mb-4">Your trusted source for authentic Buddhist offerings in Boralesgamuwa, Colombo.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-yellow-400 transition-all"><i data-feather="facebook"></i></a>
+                        <a href="#" class="hover:text-yellow-400 transition-all"><i data-feather="instagram"></i></a>
+                        <a href="#" class="hover:text-yellow-400 transition-all"><i data-feather="twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-yellow-400 transition-all">Home</a></li>
+                        <li><a href="#products" class="hover:text-yellow-400 transition-all">Products</a></li>
+                        <li><a href="#about" class="hover:text-yellow-400 transition-all">About Us</a></li>
+                        <li><a href="#contact" class="hover:text-yellow-400 transition-all">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i data-feather="map-pin" class="mr-2 mt-1"></i>
+                            <span>123 Temple Road, Boralesgamuwa, Colombo</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="phone" class="mr-2 mt-1"></i>
+                            <span>+94 76 123 4567</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="mail" class="mr-2 mt-1"></i>
+                            <span>info@punkalasa.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-purple-800 mt-8 pt-8 text-center">
+                <p>&copy; 2023 Punkalasa Atapirikara. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-  <section id="contact">
-    <div class="container">
-      <h2 id="contact-title">Contact Us</h2>
-      <form class="contact-form" action="https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse" method="POST" target="hidden_iframe">
-        <input name="entry.YOUR_NAME_FIELD" placeholder="Your Name" required />
-        <input name="entry.YOUR_PHONE_FIELD" placeholder="Phone Number" required />
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-      <iframe name="hidden_iframe" style="display:none;" onload="didSubmit()"></iframe>
-    </div>
-  </section>
+    <!-- Floating Contact Button -->
+    <a href="tel:+94761234567" class="floating-btn bg-green-600 text-white rounded-full p-4 shadow-lg hover:bg-green-700 transition-all">
+        <i data-feather="phone" class="w-6 h-6"></i>
+    </a>
 
-  <a href="https://wa.me/94771234567" class="fab">💬</a>
+    <!-- Scripts -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
 
-  <footer>
-    <div class="container">
-      <a href="https://facebook.com/punkalasa">📘</a>
-      <a href="https://instagram.com/punkalasa">📸</a>
-      <a href="https://wa.me/94771234567">💬</a>
-      <p>&copy; 2025 Punkalasa Atapirikara. All rights reserved.</p>
-      <p>Boralasgamuwa, Colombo, Sri Lanka</p>
-    </div>
-  </footer>
+        // Load products from JSON
+        fetch('products.json')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('products-container');
+                data.slice(0, 3).forEach(product => {
+                    container.innerHTML += `
+                        <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition-all hover:shadow-lg" data-aos="fade-up">
+                            <img src="${product.image}" alt="${product.name}" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-xl font-semibold text-purple-800 mb-2">${product.name}</h3>
+                                <p class="text-gray-600 mb-4">${product.description.substring(0, 100)}...</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-lg font-bold text-purple-700">Rs. ${product.price}</span>
+                                    <button class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg transition-all">
+                                        View Details
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+            });
 
-  <script>
-    // Bilingual Toggle
-    function setLang(lang) {
-      if (lang === 'en') {
-        document.getElementById('title').innerText = 'Punkalasa Atapirikara';
-        document.getElementById('subtitle').innerText = 'Sacred Buddhist Offerings in Boralasgamuwa, Colombo';
-        document.getElementById('about-title').innerText = 'About Us';
-        document.getElementById('about-text').innerText = 'Punkalasa Atapirikara has been serving the Buddhist community in Boralasgamuwa for over 15 years. We specialize in handmade pirikara sets using traditional materials and craftsmanship.';
-        document.getElementById('services-title').innerText = 'Our Services';
-        document.getElementById('service1').innerText = 'Custom Pirikara Sets';
-        document.getElementById('service2').innerText = 'Temple Supply Contracts';
-        document.getElementById('service3').innerText = 'Home Delivery in Colombo';
-        document.getElementById('map-title').innerText = 'Visit Us';
-        document.getElementById('contact-title').innerText = 'Contact Us';
-      } else if (lang === 'si') {
-        document.getElementById('title').innerText = 'පුංකලාස අතපිරිකර';
-        document.getElementById('subtitle').innerText = 'බෝරලස්ගමුව, කොළඹ දෙ පිරිකර';
-        document.getElementById('about-title').innerText = 'අප ගැන';
-        document.getElementById('about-text').innerText = 'පුංකලාස අතපිරිකර බෝරලස්ගමුව බෞද්ධ සමාජය වසර 15 කට අධික කාලයක් සේවය කරයි. අපි සාම්ප්‍රදායික ද්‍රව්‍ය සහ ක්‍රමවේද භාවිතයෙන් නිෂ්පාදිත පිරිකර කට්ටල විශේෂඥයිමු.';
-        document.getElementById('services-title').innerText = 'අපගේ සේවා';
-        document.getElementById('service1').innerText = 'අභිරුචි පිරිකර කට්ටල';
-        document.getElementById('service2').innerText = 'විහාර සැපයුම් ගිවිසුම්';
-        document.getElementById('service3').innerText = 'කොළඹ ප්‍රදේශයේ ගෙදර බෙදාහැරීම';
-        document.getElementById('map-title').innerText = 'අපව සොයා යන්න';
-        document.getElementById('contact-title').innerText = 'අපව සම්බන්ධ කරන්න';
-      }
-    }
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            
+            // Here you would normally send the data to Google Forms
+            // For demo purposes, we'll just show an alert
+            alert('Thank you for your message! We will contact you soon.');
+            this.reset();
+        });
 
-    // Hamburger Menu
-    document.querySelector('.hamburger').addEventListener('click', () => {
-      const navLinks = document.querySelector('.nav-links');
-      navLinks.classList.toggle('active');
-    });
-
-    // Form submit message
-    function didSubmit() {
-      alert('Message sent!');
-    }
-  </script>
-
+        // Initialize animations
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+    <script>feather.replace();</script>
+    <script>const { animate } = anime;</script>
 </body>
 </html>
