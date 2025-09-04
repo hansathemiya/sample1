@@ -1,0 +1,99 @@
+[
+    {
+        "id": 1,
+        "name": "Traditional Lotus Flower Arrangement",
+        "description": "Beautiful fresh lotus flowers arranged in a traditional style for temple offerings and home worship.",
+        "price": 1500,
+        "category": "flowers",
+        "image": "http://static.photos/nature/640x360/1"
+    },
+    {
+        "id": 2,
+        "name": "Brass Oil Lamp Set",
+        "description": "Set of 3 traditional brass oil lamps with cotton wicks, perfect for daily puja rituals.",
+        "price": 3500,
+        "category": "oil-lamps",
+        "image": "http://static.photos/minimal/640x360/2"
+    },
+    {
+        "id": 3,
+        "name": "Premium Incense Sticks (50pc)",
+        "description": "High-quality fragrant incense sticks with sandalwood and floral scents for meditation and worship.",
+        "price": 1200,
+        "category": "incense",
+        "image": "http://static.photos/abstract/640x360/3"
+    },
+    {
+        "id": 4,
+        "name": "Complete Puja Set",
+        "description": "Complete offering set including flowers, incense, oil lamp, and other essentials for Buddhist rituals.",
+        "price": 4500,
+        "category": "puja-sets",
+        "image": "http://static.photos/minimal/640x360/4"
+    },
+    {
+        "id": 5,
+        "name": "Buddha Statue (8 inch)",
+        "description": "Handcrafted resin Buddha statue with gold finish, perfect for home altars and meditation spaces.",
+        "price": 6500,
+        "category": "other",
+        "image": "http://static.photos/minimal/640x360/5"
+    },
+    {
+        "id": 6,
+        "name": "Temple Flower Garland",
+        "description": "Long fresh flower garland made with jasmine and lotus flowers for temple decorations.",
+        "price": 2500,
+        "category": "flowers",
+        "image": "http://static.photos/nature/640x360/6"
+    },
+    {
+        "id": 7,
+        "name": "Clay Oil Lamp Set",
+        "description": "Eco-friendly clay oil lamps with natural finish, ideal for special puja ceremonies.",
+        "price": 1800,
+        "category": "oil-lamps",
+        "image": "http://static.photos/minimal/640x360/7"
+    },
+    {
+        "id": 8,
+        "name": "Sandalwood Incense Cones",
+        "description": "Premium sandalwood incense cones that provide long-lasting fragrance during meditation.",
+        "price": 950,
+        "category": "incense",
+        "image": "http://static.photos/abstract/640x360/8"
+    },
+    {
+        "id": 9,
+        "name": "Mini Puja Tray Set",
+        "description": "Compact puja set with all essential items for travelers and small home altars.",
+        "price": 3200,
+        "category": "puja-sets",
+        "image": "http://static.photos/minimal/640x360/9"
+    },
+    {
+        "id": 10,
+        "name": "Prayer Beads (108 beads)",
+        "description": "Authentic Buddhist prayer beads made from sacred Bodhi tree seeds for meditation.",
+        "price": 2800,
+        "category": "other",
+        "image": "http://static.photos/minimal/640x360/10"
+    },
+    {
+        "id": 11,
+        "name": "Frangipani Flower Basket",
+        "description": "Fresh frangipani flowers arranged in a traditional woven basket for temple offerings.",
+        "price": 2000,
+        "category": "flowers",
+        "image": "http://static.photos/nature/640x360/11"
+    },
+    {
+        "id": 12,
+        "name": "Silver Plated Oil Lamp",
+        "description": "Elegant silver-plated oil lamp with intricate designs for special religious occasions.",
+        "price": 5500,
+        "category": "oil-lamps",
+        "image": "http://static.photos/minimal/640x360/12"
+    }
+]
+```
