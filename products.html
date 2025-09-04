@@ -1,73 +1,244 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8" />
-  <title>Products - Punkalasa Atapirikara</title>
-  <meta name="description" content="Browse our collection of handmade Buddhist pirikara sets in Boralasgamuwa, Colombo." />
-  <link rel="stylesheet" href="index.html#styles" />
-  <style>
-    /* Reuse styles from index.html */
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; color: #2c3e50; background: url('https://i.imgur.com/5VvJTrX.png') repeat center center; background-size: 300px; background-color: #f9f7f4; }
-    .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
-    header { background: white; padding: 15px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-    section { padding: 60px 0; background: white; }
-    .card { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; }
-    .card img { width: 100%; border-radius: 10px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Punkalasa Atapirikara | Buddhist Offerings in Boralesgamuwa</title>
+    <meta name="description" content="Browse our complete collection of Buddhist offerings including flowers, oil lamps, incense, and puja sets in Boralesgamuwa, Colombo.">
+    <meta name="keywords" content="Buddhist pirikara, temple supplies, religious items, puja items, Boralesgamuwa, Colombo, Sri Lanka">
+    
+    <!-- Placeholder for Meta Pixel Tag -->
+    <!-- Placeholder for Google SEO Tag -->
+    
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+        
+        .filter-btn.active {
+            background-color: #8e44ad;
+            color: white;
+        }
+    </style>
 </head>
-<body>
-
-  <header>
-    <div class="container">
-      <nav>
-        <div class="logo">
-          <img src="https://via.placeholder.com/50" alt="Logo" />
-          <h2>Punkalasa Atapirikara</h2>
+<body class="bg-gray-50">
+    <!-- Navigation (same as index.html) -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <div class="h-12 w-12 bg-purple-200 rounded-full flex items-center justify-center">
+                    <i data-feather="shopping-bag" class="text-purple-700"></i>
+                </div>
+                <a href="index.html" class="text-2xl font-bold text-purple-800">Punkalasa Atapirikara</a>
+            </div>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link text-gray-700 hover:text-purple-600 transition-all">Home</a>
+                <a href="products.html" class="nav-link text-purple-600 font-medium transition-all">Products</a>
+                <a href="index.html#about" class="nav-link text-gray-700 hover:text-purple-600 transition-all">About Us</a>
+                <a href="index.html#contact" class="nav-link text-gray-700 hover:text-purple-600 transition-all">Contact</a>
+            </div>
+            
+            <button class="md:hidden focus:outline-none" id="menu-toggle">
+                <i data-feather="menu" class="text-gray-700"></i>
+            </button>
         </div>
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="products.html">Products</a>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white w-full px-4 py-2 shadow-lg" id="mobile-menu">
+            <a href="index.html" class="block py-2 text-gray-700 hover:text-purple-600 transition-all">Home</a>
+            <a href="products.html" class="block py-2 text-purple-600 font-medium transition-all">Products</a>
+            <a href="index.html#about" class="block py-2 text-gray-700 hover:text-purple-600 transition-all">About Us</a>
+            <a href="index.html#contact" class="block py-2 text-gray-700 hover:text-purple-600 transition-all">Contact</a>
         </div>
-      </nav>
-    </div>
-  </header>
+    </nav>
 
-  <section>
-    <div class="container">
-      <h1>Our Pirikara Collection</h1>
-      <div style="display:grid;gap:30px;grid-template-columns:repeat(auto-fit, minmax(280px,1fr));">
-        <div class="card">
-          <img src="https://via.placeholder.com/300" alt="Golden Lotus Pirikara" />
-          <h3>Golden Lotus Pirikara Set</h3>
-          <p><strong>LKR 2,500</strong></p>
-          <p>Handcrafted brass, 7-piece set, includes oil lamp, flowers, incense</p>
+    <!-- Products Header -->
+    <section class="bg-purple-900 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Pirikara Collection</h1>
+            <p class="text-xl max-w-2xl mx-auto">Traditional Buddhist offerings for temples and home worship</p>
         </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/300" alt="Mini Home Pirikara" />
-          <h3>Mini Home Pirikara</h3>
-          <p><strong>LKR 950</strong></p>
-          <p>Ceramic oil lamp, matchbox, incense holder, 100 sticks</p>
+    </section>
+
+    <!-- Product Filters -->
+    <section class="py-8 bg-white shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap gap-2 justify-center">
+                <button class="filter-btn px-4 py-2 bg-gray-100 rounded-full hover:bg-purple-700 hover:text-white transition-all active" data-category="all">All Products</button>
+                <button class="filter-btn px-4 py-2 bg-gray-100 rounded-full hover:bg-purple-700 hover:text-white transition-all" data-category="flowers">Flowers</button>
+                <button class="filter-btn px-4 py-2 bg-gray-100 rounded-full hover:bg-purple-700 hover:text-white transition-all" data-category="oil-lamps">Oil Lamps</button>
+                <button class="filter-btn px-4 py-2 bg-gray-100 rounded-full hover:bg-purple-700 hover:text-white transition-all" data-category="incense">Incense</button>
+                <button class="filter-btn px-4 py-2 bg-gray-100 rounded-full hover:bg-purple-700 hover:text-white transition-all" data-category="puja-sets">Puja Sets</button>
+                <button class="filter-btn px-4 py-2 bg-gray-100 rounded-full hover:bg-purple-700 hover:text-white transition-all" data-category="other">Other Items</button>
+            </div>
         </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/300" alt="Temple Grade Pirikara" />
-          <h3>Temple Grade Pirikara</h3>
-          <p><strong>LKR 5,000</strong></p>
-          <p>Premium brass, engraved lotus design, 15-piece set</p>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="all-products-container">
+                <!-- Products will be loaded from JSON -->
+            </div>
+            
+            <div class="text-center mt-12">
+                <button id="load-more" class="bg-purple-700 hover:bg-purple-800 text-white font-bold py-3 px-8 rounded-full transition-all">
+                    Load More Products
+                </button>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <a href="https://wa.me/94771234567" class="fab">💬</a>
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-purple-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Punkalasa Atapirikara</h3>
+                    <p class="mb-4">Your trusted source for authentic Buddhist offerings in Boralesgamuwa, Colombo.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-yellow-400 transition-all"><i data-feather="facebook"></i></a>
+                        <a href="#" class="hover:text-yellow-400 transition-all"><i data-feather="instagram"></i></a>
+                        <a href="#" class="hover:text-yellow-400 transition-all"><i data-feather="twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-yellow-400 transition-all">Home</a></li>
+                        <li><a href="products.html" class="hover:text-yellow-400 transition-all">Products</a></li>
+                        <li><a href="index.html#about" class="hover:text-yellow-400 transition-all">About Us</a></li>
+                        <li><a href="index.html#contact" class="hover:text-yellow-400 transition-all">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i data-feather="map-pin" class="mr-2 mt-1"></i>
+                            <span>123 Temple Road, Boralesgamuwa, Colombo</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="phone" class="mr-2 mt-1"></i>
+                            <span>+94 76 123 4567</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="mail" class="mr-2 mt-1"></i>
+                            <span>info@punkalasa.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-purple-800 mt-8 pt-8 text-center">
+                <p>&copy; 2023 Punkalasa Atapirikara. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-  <footer>
-    <div class="container">
-      <a href="https://facebook.com/punkalasa">📘</a>
-      <a href="https://instagram.com/punkalasa">📸</a>
-      <a href="https://wa.me/94771234567">💬</a>
-      <p>&copy; 2025 Punkalasa Atapirikara. All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- Floating Contact Button -->
+    <a href="tel:+94761234567" class="fixed bottom-8 right-8 bg-green-600 text-white rounded-full p-4 shadow-lg hover:bg-green-700 transition-all z-50">
+        <i data-feather="phone" class="w-6 h-6"></i>
+    </a>
 
+    <!-- Scripts -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Filter buttons
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                
+                const category = this.dataset.category;
+                filterProducts(category);
+            });
+        });
+
+        // Load all products from JSON
+        let allProducts = [];
+        let displayedProducts = 6;
+        
+        fetch('products.json')
+            .then(response => response.json())
+            .then(data => {
+                allProducts = data;
+                displayProducts(allProducts.slice(0, displayedProducts));
+            });
+
+        function displayProducts(products) {
+            const container = document.getElementById('all-products-container');
+            container.innerHTML = '';
+            
+            products.forEach(product => {
+                container.innerHTML += `
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition-all hover:shadow-lg" data-category="${product.category}" data-aos="fade-up">
+                        <img src="${product.image}" alt="${product.name}" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold text-purple-800 mb-2">${product.name}</h3>
+                            <p class="text-gray-600 mb-4">${product.description.substring(0, 100)}...</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-purple-700">Rs. ${product.price}</span>
+                                <button class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg transition-all">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
+        function filterProducts(category) {
+            if (category === 'all') {
+                displayProducts(allProducts.slice(0, displayedProducts));
+            } else {
+                const filteredProducts = allProducts.filter(product => product.category === category);
+                displayProducts(filteredProducts);
+            }
+        }
+
+        // Load more products
+        document.getElementById('load-more').addEventListener('click', function() {
+            displayedProducts += 6;
+            const activeFilter = document.querySelector('.filter-btn.active').dataset.category;
+            
+            if (activeFilter === 'all') {
+                displayProducts(allProducts.slice(0, displayedProducts));
+            } else {
+                const filteredProducts = allProducts.filter(product => product.category === activeFilter);
+                displayProducts(filteredProducts);
+            }
+            
+            if (displayedProducts >= allProducts.length) {
+                this.style.display = 'none';
+            }
+        });
+
+        // Initialize animations
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+    <script>feather.replace();</script>
 </body>
 </html>
