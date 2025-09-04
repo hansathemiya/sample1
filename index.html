@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Authentic Buddhist pirikara sets in Boralasgamuwa, Colombo. Handmade offerings for temples and homes." />
+  <meta name="keywords" content="pirikara, Buddhist offerings, Boralasgamuwa shop, Colombo pirikara, temple offerings, Buddhist items, Sri Lanka" />
+  <title>Punkalasa Atapirikara - Buddhist Pirikara Shop in Boralasgamuwa</title>
+
+  <!-- Google Analytics & Meta Pixel Placeholders -->
+  <script>/* GA script will go here */</script>
+  <script>/* Meta Pixel will go here */</script>
+
+  <style>
+    :root {
+      --primary: #e6b587;
+      --secondary: #a8d8c9;
+      --accent: #d4af37;
+      --text: #2c3e50;
+      --bg: #f9f7f4;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      color: var(--text);
+      background: url('https://i.imgur.com/5VvJTrX.png') repeat center center; /* Lotus BG */
+      background-size: 300px;
+      background-color: var(--bg);
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    header {
+      background: white;
+      padding: 15px 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      height: 50px;
+      margin-right: 10px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+    }
+    .hamburger {
+      display: none;
+      cursor: pointer;
+    }
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://i.imgur.com/5VvJTrX.png');
+      background-size: cover;
+      color: white;
+    }
+    .btn {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    section {
+      padding: 60px 0;
+      background: white;
+    }
+    .lang-toggle {
+      margin-left: 20px;
+    }
+    .lang-toggle button {
+      background: none;
+      border: 1px solid var(--text);
+      padding: 5px 10px;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    .contact-form input {
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    .fab {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #25d366;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+      text-decoration: none;
+    }
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 40px 0;
+    }
+    footer a {
+      color: white;
+      font-size: 24px;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    @media (max-width: 768px) {
+      .hamburger {
+        display: block;
+      }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        padding: 20px;
+      }
+      .nav-links.active {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <img src="https://via.placeholder.com/50" alt="Logo" />
+          <h2>Punkalasa Atapirikara</h2>
+        </div>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="products.html">Products</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="lang-toggle">
+          <button onclick="setLang('en')">EN</button>
+          <button onclick="setLang('si')">සිං</button>
+        </div>
+        <div class="hamburger">
+          <span>☰</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h1 id="title">Punkalasa Atapirikara</h1>
+      <p id="subtitle">Sacred Buddhist Offerings in Boralasgamuwa, Colombo</p>
+      <a href="#contact" class="btn">Order Now</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 id="about-title">About Us</h2>
+      <p id="about-text">Punkalasa Atapirikara has been serving the Buddhist community in Boralasgamuwa for over 15 years. We specialize in handmade pirikara sets using traditional materials and craftsmanship.</p>
+    </div>
+  </section>
+
+  <section id="services" style="background:var(--secondary);color:white;">
+    <div class="container">
+      <h2 id="services-title">Our Services</h2>
+      <ul>
+        <li id="service1">Custom Pirikara Sets</li>
+        <li id="service2">Temple Supply Contracts</li>
+        <li id="service3">Home Delivery in Colombo</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 id="map-title">Visit Us</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.863238800679!2d79.8935896748474!3d6.894573593215554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bcf5f5a3d3d%3A0x3b3b3b3b3b3b3b3b!2sBoralasgamuwa!5e0!3m2!1sen!2slk!4v1700000000000!5m2!1sen!2slk" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 id="contact-title">Contact Us</h2>
+      <form class="contact-form" action="https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse" method="POST" target="hidden_iframe">
+        <input name="entry.YOUR_NAME_FIELD" placeholder="Your Name" required />
+        <input name="entry.YOUR_PHONE_FIELD" placeholder="Phone Number" required />
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <iframe name="hidden_iframe" style="display:none;" onload="didSubmit()"></iframe>
+    </div>
+  </section>
+
+  <a href="https://wa.me/94771234567" class="fab">💬</a>
+
+  <footer>
+    <div class="container">
+      <a href="https://facebook.com/punkalasa">📘</a>
+      <a href="https://instagram.com/punkalasa">📸</a>
+      <a href="https://wa.me/94771234567">💬</a>
+      <p>&copy; 2025 Punkalasa Atapirikara. All rights reserved.</p>
+      <p>Boralasgamuwa, Colombo, Sri Lanka</p>
+    </div>
+  </footer>
+
+  <script>
+    // Bilingual Toggle
+    function setLang(lang) {
+      if (lang === 'en') {
+        document.getElementById('title').innerText = 'Punkalasa Atapirikara';
+        document.getElementById('subtitle').innerText = 'Sacred Buddhist Offerings in Boralasgamuwa, Colombo';
+        document.getElementById('about-title').innerText = 'About Us';
+        document.getElementById('about-text').innerText = 'Punkalasa Atapirikara has been serving the Buddhist community in Boralasgamuwa for over 15 years. We specialize in handmade pirikara sets using traditional materials and craftsmanship.';
+        document.getElementById('services-title').innerText = 'Our Services';
+        document.getElementById('service1').innerText = 'Custom Pirikara Sets';
+        document.getElementById('service2').innerText = 'Temple Supply Contracts';
+        document.getElementById('service3').innerText = 'Home Delivery in Colombo';
+        document.getElementById('map-title').innerText = 'Visit Us';
+        document.getElementById('contact-title').innerText = 'Contact Us';
+      } else if (lang === 'si') {
+        document.getElementById('title').innerText = 'පුංකලාස අතපිරිකර';
+        document.getElementById('subtitle').innerText = 'බෝරලස්ගමුව, කොළඹ දෙ පිරිකර';
+        document.getElementById('about-title').innerText = 'අප ගැන';
+        document.getElementById('about-text').innerText = 'පුංකලාස අතපිරිකර බෝරලස්ගමුව බෞද්ධ සමාජය වසර 15 කට අධික කාලයක් සේවය කරයි. අපි සාම්ප්‍රදායික ද්‍රව්‍ය සහ ක්‍රමවේද භාවිතයෙන් නිෂ්පාදිත පිරිකර කට්ටල විශේෂඥයිමු.';
+        document.getElementById('services-title').innerText = 'අපගේ සේවා';
+        document.getElementById('service1').innerText = 'අභිරුචි පිරිකර කට්ටල';
+        document.getElementById('service2').innerText = 'විහාර සැපයුම් ගිවිසුම්';
+        document.getElementById('service3').innerText = 'කොළඹ ප්‍රදේශයේ ගෙදර බෙදාහැරීම';
+        document.getElementById('map-title').innerText = 'අපව සොයා යන්න';
+        document.getElementById('contact-title').innerText = 'අපව සම්බන්ධ කරන්න';
+      }
+    }
+
+    // Hamburger Menu
+    document.querySelector('.hamburger').addEventListener('click', () => {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    });
+
+    // Form submit message
+    function didSubmit() {
+      alert('Message sent!');
+    }
+  </script>
+
+</body>
+</html>
